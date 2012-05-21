@@ -6,9 +6,7 @@ I am releasing it with GNU LGPL (http://www.gnu.org/licenses/lgpl.txt) license.
 Example:
 
 var s= 'ab[c]d|[1.2.3]';
-
 var x= tstring(s).substringAfter('|').substringBetween('[', ']').substringAfterLast('.');
-
 expect(x.value()).toBe('3');
 
 
